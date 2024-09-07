@@ -1,6 +1,7 @@
 class WeatherView {
   _data;
   _headerEl = document.querySelector(".card__header");
+  _cardEl = document.querySelector(".card");
   _bodyItem1 = document.querySelector(".card__body-item-1");
   _bodyItem2 = document.querySelector(".card__body-item-2");
   _bodyItem3 = document.querySelector(".card__body-item-3");
@@ -66,7 +67,21 @@ class WeatherView {
     this._bodyItem8.removeChild(this._bodyItem8.lastElementChild);
   }
 
+  /**
+   * Changes the background image of the card and the weather forecast values
+   */
   _generateMarkup() {
+    // Change background image based on passed imageURL from Unsplash
+    this._cardEl.style.backgroundImage = `
+      linear-gradient(
+        0deg,
+        rgba(101, 60, 103, 0.65) 0%,
+        rgba(161, 62, 92, 0.65) 39%,
+        rgba(177, 80, 55, 0.65) 100%
+      ),
+      url('${this._data.image}')
+    `;
+
     const headerMarkup = `
       <p class="paragraph-1">${this._data.city}, ${this._data.country}</p>
       <h2 class="heading-2">${this._data.forecast.temperature}</h2>

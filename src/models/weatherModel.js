@@ -75,11 +75,20 @@ const createForecast = function (data) {
   };
 };
 
+/**
+ * Extraxts the weather forecast using the specified coordinates
+ * @param {Number} lat
+ * @param {Number} long
+ * @param {String} city
+ * @param {String} country
+ * @param {String} imageUrl
+ */
 export const loadForecast = async function (
   lat,
   long,
   city = "Las Vegas",
-  country = "United States"
+  country = "United States",
+  imageUrl = "../../assets/images/beach.jpg"
 ) {
   try {
     const url = `${WEATHER_API_URL}?latitude=${lat}&longitude=${long}&current=temperature_2m,relative_humidity_2m,apparent_temperature,precipitation,snowfall,cloud_cover&daily=apparent_temperature_max,apparent_temperature_min,sunrise,sunset,uv_index_max,wind_speed_10m_max&temperature_unit=fahrenheit&wind_speed_unit=mph&precipitation_unit=inch&timezone=auto`;
@@ -89,12 +98,11 @@ export const loadForecast = async function (
     }
 
     const data = await res.json();
-    console.log(data);
 
     state.city = city;
     state.country = country;
+    state.image = imageUrl;
     createForecast(data);
-    console.log(state.forecast);
   } catch (err) {
     console.error(`${err} 🍔`);
   }
