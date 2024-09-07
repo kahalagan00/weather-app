@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, :before, :after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+@media only screen and (width <= 1200px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media only screen and (width <= 900px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (width <= 1800px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+.card {
+  color: #fff;
+  background-image: linear-gradient(0deg, #653c6780 0%, #a13e5c80 39%, #b1503780 100%), url("beach.013be819.jpg");
+  background-position: top;
+  background-size: cover;
+  border-radius: 25px;
+  grid-template-rows: 75px 200px 1fr;
+  display: grid;
+  overflow: hidden;
+}
+
+.card__search {
+  grid-template-columns: 80% 20%;
+  align-items: center;
+  display: grid;
+}
+
+.card__search-box {
+  color: #d74b76;
+  background-color: #fff;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  height: 50%;
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 1.25rem;
+}
+
+.card__search-btn {
+  cursor: pointer;
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin: 2rem;
+  padding: .2rem;
+  display: flex;
+}
+
+.card__search-btn img {
+  width: 70%;
+  height: 70%;
+  margin: 1rem;
+  display: block;
+}
+
+.card__header {
+  padding: 2rem;
+}
+
+.card__body {
+  grid-template-rows: repeat(4, min-content);
+  grid-template-columns: repeat(2, 200px);
+  place-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  display: grid;
+}
+
+.card__body-item {
+  background: linear-gradient(0deg, #653c67 0%, #a13e5c 39%, #b15037 100%);
+  border-radius: 16px;
+  grid-template-rows: repeat(2, min-content);
+  grid-template-columns: max-content 1fr;
+  justify-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding: .5rem;
+  display: grid;
+}
+
+.card__body img {
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+
+.card__forecast-title {
+  grid-column: 1 / -1;
+  justify-self: center;
+  font-size: 1.5rem;
+}
+
+.card__forecast-value {
+  justify-self: start;
+  font-size: 2.5rem;
+}
+
+.container {
+  grid-template-columns: repeat(auto-fit, minmax(min-content, 1fr));
+  justify-items: center;
+  gap: 2rem;
+  height: 100vh;
+  padding: 3rem;
+  display: grid;
+  overflow: hidden;
+}
+
+body {
+  font-family: Garamond, sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.heading-1 {
+  font-size: 5rem;
+}
+
+.heading-2 {
+  font-size: 4rem;
+}
+
+.heading-3 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.paragraph-1 {
+  font-size: 2rem;
+}
+/*# sourceMappingURL=index.216888bb.css.map */

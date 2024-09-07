@@ -1,0 +1,9 @@
+.container {
+  height: 100vh;
+  overflow: hidden;
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min-content, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}

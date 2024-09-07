@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+  @media only screen and (max-width: 1200px) {
+    font-size: 56.25%; // 56.25% of 16px == 9px, --> 1rem = 9px
+  }
+
+  @media only screen and (max-width: 900px) {
+    font-size: 50%; // 50% of 16px == 8px, --> 1rem = 8px
+  }
+
+  // @include respond(phone) {
+  //   font-size: 37.5%; // 1rem = 6px
+  // }
+
+  @media only screen and (max-width: 1800px) {
+    font-size: 75%; // 75% of 16px == 12px, --> 1rem = 12px
+  }
+}
