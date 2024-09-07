@@ -8,8 +8,8 @@
     url(../../public/assets/images/beach.jpg);
   background-size: cover;
   background-position: top;
-  width: auto;
-  height: 780px;
+  width: 500px;
+  min-height: 780px;
   //   border: 2px solid black;
   color: white;
   border-radius: 25px;
@@ -21,6 +21,10 @@
   &__search {
     display: grid;
     grid-template-columns: 80% 20%;
+
+    @media only screen and (max-width: 500px) {
+      grid-template-columns: 70% 30%;
+    }
     align-items: center;
     &-box {
       padding: 1rem;
@@ -82,7 +86,12 @@
     // background-color: lightgreen;
     display: grid;
     grid-template-rows: repeat(4, min-content);
-    grid-template-columns: repeat(2, 200px);
+    grid-template-columns: repeat(2, 1fr);
+
+    @media only screen and (max-width: 500px) {
+      grid-template-rows: repeat(8, min-content);
+      grid-template-columns: 1fr;
+    }
     justify-items: center;
     align-items: center;
     gap: 1rem;
@@ -104,6 +113,11 @@
       grid-template-columns: max-content 1fr;
       justify-items: center;
       gap: 1rem;
+
+      @media only screen and (max-width: 500px) {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
       box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
         rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     }
@@ -120,10 +134,22 @@
       grid-column: 1 / -1;
       font-size: 1.5rem;
       justify-self: center;
+
+      @media only screen and (max-width: 500px) {
+        grid-column: 3 / -1;
+        font-size: 1rem;
+        justify-self: center;
+        align-self: center;
+      }
     }
 
     &-value {
       font-size: 2.5rem;
+      @media only screen and (max-width: 500px) {
+        font-size: 1.5rem;
+        justify-self: center;
+        align-self: center;
+      }
       justify-self: start;
     }
   }
