@@ -1,4 +1,8 @@
+<a href="https://joshmar-weather-app.netlify.app/">
+
 # Premium Weather Application
+
+</a>
 
 ## Description
 
@@ -22,7 +26,9 @@ This is a weather application that outputs details about the weather forecast of
 
 Type specified city on the search box then press "Enter" or click the search button.
 
-<img src="./public/assets/images/screenshot.png" alt="Project Image" title="Project Image" width="300">
+<a href="https://joshmar-weather-app.netlify.app/">
+    <img src="./public/assets/images/screenshot.png" alt="Project Image" title="Project Image" width="300">
+</a>
 
 ## Installation
 
