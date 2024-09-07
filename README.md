@@ -22,9 +22,7 @@ This is a weather application that outputs details about the weather forecast of
 
 Type specified city on the search box then press "Enter" or click the search button.
 
-    ```md
-    ![alt text](./public/assets/images/screenshot.png)
-    ```
+<img src="./public/assets/images/screenshot.png" alt="Project Image" title="Project Image" width="300">
 
 ## Installation
 
@@ -57,3 +55,4 @@ What are the steps required to install your project? Provide a step-by-step desc
 ## Badges
 
 ![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/32761c7e-110e-4279-8988-6fa7c74935c7/deploy-status)](https://app.netlify.com/sites/joshmar-weather-app/deploys)

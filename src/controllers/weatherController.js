@@ -49,7 +49,7 @@ const controlHeader = async function () {
     }
 
     // Use reverse geocoding initially
-    const url = `http://api.positionstack.com/v1/reverse?access_key=${POSITION_STACK_API_KEY}&query=${lat},${long}`;
+    const url = `${POSITION_STACK_API_URL}reverse?access_key=${POSITION_STACK_API_KEY}&query=${lat},${long}`;
     const res = await fetch(url);
     const { data } = await res.json();
 
