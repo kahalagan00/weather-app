@@ -1,8 +1,4 @@
-<a href="https://joshmar-weather-app.netlify.app/">
-
-# Premium Weather Application
-
-</a>
+# <a href="https://joshmar-weather-app.netlify.app/"> Premium Weather Application </a>
 
 ## Description
 
